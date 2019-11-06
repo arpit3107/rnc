@@ -37,7 +37,7 @@ public class LawyerController {
 	public String Allemp(Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -59,7 +59,7 @@ public class LawyerController {
 	public String Addemp(@ModelAttribute("lawer") Lawyer lawyer,Model model, HttpServletRequest request) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -88,7 +88,7 @@ public class LawyerController {
 	public String EmplCont(@PathVariable(value="id") int id,Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -106,7 +106,7 @@ public class LawyerController {
 	public String DelEmplCont(@PathVariable(value="id") int id,@PathVariable(value="contact") String contact,Model model) throws SQLException, NotFoundException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -124,7 +124,7 @@ public class LawyerController {
 	{
 
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -139,7 +139,7 @@ public class LawyerController {
 		public String UpEmplShow(@ModelAttribute("lawyer_contact") Lawyer_contact lawyer_contact,Model model,@PathVariable(value="id") int id,@PathVariable(value="contact") String contact) throws SQLException, NotFoundException
 		{
 			Connection conn =null;
-			try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+			try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 			} catch(SQLException e)
 			{
 				e.printStackTrace();

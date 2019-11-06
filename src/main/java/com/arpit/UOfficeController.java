@@ -34,7 +34,7 @@ public class UOfficeController{
 	@RequestMapping("useroffice")
 	public String Office(Model model) throws SQLException {
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -49,7 +49,7 @@ public class UOfficeController{
 	public String OffSho(@PathVariable(value="name") String name,Model model) throws NotFoundException, SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();

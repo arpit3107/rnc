@@ -40,7 +40,7 @@ public class UTenderController{
 	public String Showall(Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -61,7 +61,7 @@ public class UTenderController{
 	public String EmplShow(@ModelAttribute("tenders") Tenders tenders,Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -78,7 +78,7 @@ public class UTenderController{
 	{
 		
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();

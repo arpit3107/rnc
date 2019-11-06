@@ -40,7 +40,7 @@ public class BankController {
 	{
 		Connection conn =null;
 		try {
-			conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+			conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -62,7 +62,7 @@ public class BankController {
 	{
 		Connection conn =null;
 		try {
-			conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+			conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -83,7 +83,7 @@ public class BankController {
 	public String AccUpd(@ModelAttribute("bank") Bank bank,Model model,@PathVariable(value="account_number") String account_number) throws NotFoundException, SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();

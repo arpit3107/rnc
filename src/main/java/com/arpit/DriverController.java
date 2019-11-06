@@ -40,7 +40,7 @@ public class DriverController {
 	public String Showall(Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -61,7 +61,7 @@ public class DriverController {
 	public String Addtender(@ModelAttribute("drivers") Drivers drivers,Model model) throws SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();
@@ -74,7 +74,7 @@ public class DriverController {
 	public String EmplSho(@PathVariable(value="driver_id") int driver_id,Model model) throws NotFoundException, SQLException
 	{
 		Connection conn =null;
-		try {conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/project","arpit","arpit~0201");
+		try {conn= DriverManager.getConnection("jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv","WBiPzPYnnv","lqSJLks6bJ");
 		} catch(SQLException e)
 		{
 			e.printStackTrace();

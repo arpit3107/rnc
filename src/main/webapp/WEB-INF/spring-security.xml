@@ -29,9 +29,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<beans:property name="url"
-			value="jdbc:mysql://localhost:3306/project?useSSL=false" />
-		<beans:property name="username" value="arpit" />
-		<beans:property name="password" value="arpit~0201" />
+			value="jdbc:mysql://remotemysql.com:3306/WBiPzPYnnv?useSSL=false" />
+		<beans:property name="username" value="WBiPzPYnnv" />
+		<beans:property name="password" value="lqSJLks6bJ" />
 	</beans:bean>
 
  <beans:bean id="customSuccessHandler" class="com.arpit.CustomHandler"/>
